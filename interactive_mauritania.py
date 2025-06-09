@@ -4,7 +4,7 @@ import folium
 from streamlit_folium import st_folium
 
 # Load ADM3 shapefile
-shapefile_path = r"C:\Users\hashi\OneDrive - Higher Education Commission\Desktop\DIME\Map task climate\mrt_adm_ansade_20240327_ab_shp\mrt_admbnda_adm3_ansade_20240327.shp"
+shapefile_path = "data/mrt_admbnda_adm3_ansade_20240327.shp"
 gdf = gpd.read_file(shapefile_path)
 
 # Clean up
