@@ -6,6 +6,8 @@ from streamlit_folium import st_folium
 # Load ADM3 shapefile
 shapefile_path = "data/mrt_admbnda_adm3_ansade_20240327.shp"
 gdf = gpd.read_file(shapefile_path)
+gdf = gdf[~((gdf['ADM3_EN'] == 'Beneamane') & (gdf['ADM2_EN'] == 'Aïoun'))]
+
 
 # Clean up
 gdf["adm3_clean"] = gdf["ADM3_EN"].str.strip().str.lower()
