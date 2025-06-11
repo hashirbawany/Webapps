@@ -3,6 +3,11 @@ import geopandas as gpd
 import folium
 from streamlit_folium import st_folium
 
+import os
+print("Working directory:", os.getcwd())
+print("Files in /Mauritania/datafiles:", os.listdir("Mauritania/datafiles"))
+
+
 # Load ADM3 shapefile
 shapefile_path = "Mauritania/datafiles/mrt_admbnda_adm3_ansade_20240327.shp"
 gdf = gpd.read_file(shapefile_path)
