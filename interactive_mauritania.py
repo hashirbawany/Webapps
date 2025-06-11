@@ -28,7 +28,7 @@ m = folium.Map(location=[20.0, -10.0], zoom_start=6)
 folium.GeoJson(gdf.geometry, name="All Communes", style_function=lambda x: {
     'fillOpacity': 0.0,
     'color': 'orange',
-    'weight': 1
+    'weight': 3
 }).add_to(m)
 
 # Selected departments (ADM2) dissolved + highlighted
