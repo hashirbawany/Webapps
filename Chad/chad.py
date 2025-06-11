@@ -110,7 +110,7 @@ def launch_commune_map_app(
 
 
 launch_commune_map_app(
-    shapefile_path="Chad/datafiles/stanford-tq540mj3859-shapefile\tq540mj3859.shp",
+    shapefile_path="Chad/datafiles/tq540mj3859.shp",
     adm3_col="name_3",
     adm2_col="name_2",
     map_center=(16.0, -9.5),
