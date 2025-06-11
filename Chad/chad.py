@@ -5,8 +5,8 @@ from streamlit_folium import st_folium
 
 
 # Load ADM3 shapefile
-shapefile_path = r"C:\Users\hashi\OneDrive - Higher Education Commission\Desktop\DIME\Map task climate\Shp Files\stanford-tq540mj3859-shapefile\tq540mj3859.shp"
-gdf = gpd.read_file(shapefile_path)
+#shapefile_path = r"C:\Users\hashi\OneDrive - Higher Education Commission\Desktop\DIME\Map task climate\Shp Files\stanford-tq540mj3859-shapefile\tq540mj3859.shp"
+#gdf = gpd.read_file(shapefile_path)
 #https://geo.nyu.edu/catalog/stanford-tq540mj3859
 
 
