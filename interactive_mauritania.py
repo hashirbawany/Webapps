@@ -27,7 +27,7 @@ m = folium.Map(location=[20.0, -10.0], zoom_start=6)
 # All ADM3 outlines (gray)
 folium.GeoJson(gdf.geometry, name="All Communes", style_function=lambda x: {
     'fillOpacity': 0.0,
-    'color': 'gray',
+    'color': 'orange',
     'weight': 1
 }).add_to(m)
 
