@@ -41,8 +41,8 @@ def launch_commune_map_app(
     # All outlines
     folium.GeoJson(gdf.geometry, name="All Communes", style_function=lambda x: {
         'fillOpacity': 0.0,
-        'color': 'gray',
-        'weight': 3
+        'color': 'orange',
+        'weight': 0.5
     }).add_to(m)
 
     for dept_name in selected_depts:
