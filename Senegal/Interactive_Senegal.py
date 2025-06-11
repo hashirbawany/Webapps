@@ -20,7 +20,7 @@ def launch_commune_map_app(
 
     gdf = load_shapefile(shapefile_path)
 
-    gdf["geometry"] = gdf["geometry"].simplify(0.001, preserve_topology=True)
+    gdf["geometry"] = gdf["geometry"].simplify(0.01, preserve_topology=True)
     
     # Clean column names
     gdf["adm3_clean"] = gdf[adm3_col].astype(str).str.strip().str.lower()
@@ -41,8 +41,8 @@ def launch_commune_map_app(
     # All outlines
     folium.GeoJson(gdf.geometry, name="All Communes", style_function=lambda x: {
         'fillOpacity': 0.0,
-        'color': 'orange',
-        'weight': 0.5
+        'color': 'grey',
+        'weight': 3
     }).add_to(m)
 
     for dept_name in selected_depts:
