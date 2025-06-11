@@ -105,7 +105,7 @@ def launch_commune_map_app(
 
 
 launch_commune_map_app(
-    shapefile_path=r"C:\Users\hashi\OneDrive - Higher Education Commission\Desktop\DIME\Map task climate\Shp Files\sen_admbnd_anat_20240520_ab_shp\sen_admbnda_adm3_anat_20240520.shp",
+    shapefile_path=datafiles/sen_admbnda_adm3_anat_20240520.shp",
     adm3_col="ADM3_FR",
     adm2_col="ADM2_FR",
     map_center=(16.0, -9.5),
