@@ -20,7 +20,7 @@ def launch_commune_map_app(
 
     gdf = load_shapefile(shapefile_path)
 
-    #gdf["geometry"] = gdf["geometry"].simplify(0.001, preserve_topology=True)
+    gdf["geometry"] = gdf["geometry"].simplify(0.001, preserve_topology=True)
     
     # Clean column names
     gdf["adm3_clean"] = gdf[adm3_col].astype(str).str.strip().str.lower()
