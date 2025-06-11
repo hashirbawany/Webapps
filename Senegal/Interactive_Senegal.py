@@ -1,3 +1,4 @@
+
 import streamlit as st
 import geopandas as gpd
 import folium
@@ -111,3 +112,4 @@ launch_commune_map_app(
     map_center=(16.0, -9.5),
     map_zoom=6
 )    
+
