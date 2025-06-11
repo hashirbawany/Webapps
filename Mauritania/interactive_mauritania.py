@@ -4,7 +4,7 @@ import folium
 from streamlit_folium import st_folium
 
 # Load ADM3 shapefile
-shapefile_path = "datafiles/mrt_admbnda_adm3_ansade_20240327.shp"
+shapefile_path = "Mauritania/datafiles/mrt_admbnda_adm3_ansade_20240327.shp"
 gdf = gpd.read_file(shapefile_path)
 gdf = gdf[~((gdf['ADM3_EN'] == 'Beneamane') & (gdf['ADM2_EN'] == 'Aïoun'))]
 
